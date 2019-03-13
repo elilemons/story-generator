@@ -1,0 +1,31 @@
+.type-gem {
+    background: pink;
+    color: black;
+}
+
+.type-human {
+    background: aquamarine;
+    color: black;
+}
+
+.type-mystical-creature {
+    background: purple;
+    color: white;
+}
+.character-card {
+    min-height: 80vh;
+}
+#character-image {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.card-img-top {
+    overflow: scroll;
+    width: 300px !important;
+    min-height: 70vh;
+}
+#list-of-characters{
+    max-height: 90vh;
+    overflow: scroll;
+}
