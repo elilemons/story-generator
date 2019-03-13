@@ -22,7 +22,7 @@
 }
 .card-img-top {
     overflow: scroll;
-    width: 300px !important;
+    width: 100%;
     min-height: 70vh;
 }
 #list-of-characters{

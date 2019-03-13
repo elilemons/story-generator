@@ -59,24 +59,25 @@ $(() => {
     $('#character-image').attr('src', character.image.url);
     $('#character-name').text(character.name);
     $('#character-notes').text(character.notes);
-    let typeHTML,
+    $('#character-types').html('');
+    let typeHTML = '',
         typeCSSClass = '';
     for (let type of character.type) {
       if (type === 'Gem') {
-        typeCSSClass += 'type-gem';
+        typeCSSClass += 'type-gem ';
       }
 
       if (type === 'Human') {
-        typeCSSClass += 'type-human'
+        typeCSSClass += 'type-human '
       }
 
       if (type === 'Mystical Creature') {
-        typeCSSClass += 'type-mystical-creature';
+        typeCSSClass += 'type-mystical-creature ';
       }
-      typeHTML = $(`<span class="badge ${typeCSSClass}">${type}</span>`);
+      typeHTML += `<span class="badge mr-1 ${typeCSSClass}">${type}</span>`;
     }
 
-    $('#character-types').html(typeHTML);
+    $('#character-types').append(typeHTML);
     
   }
 
